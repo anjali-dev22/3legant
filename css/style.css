@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #377dff;
+    --secondary-color: #38cb89;
+    --text-color: #141718;
+    --white-color: #fff;
+  }
+body {
+  margin: 0;
+  padding: 0;
+  color: var( --text-color);
+}
+.site-container {
+    max-width: 1120px;
+    margin: auto;
+}
+.site-inner-container {
+    max-width: 1120px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: var( --text-color);
+    transition: .3s all;
+}
+a:hover {
+    color: var(--primary-color) ;
+    transition: .3s all;
+}
+.indicator-bar {
+    background: var(--primary-color);
+}
+header .product-count {
+    background-color:var(--text-color) ;
+    height: 21px;
+    width: 21px;
+    min-width: 21px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.heading1 {
+    font-size: 72px;
+    line-height: 1;
+}
+.heading2 {
+    font-size: 40px;
+}
+.btn-primary {
+    min-width: 234px;
+    height: 56px;
+    transition: .4s all;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+    width: fit-content;
+}
+.btn-primary:hover {
+    transition: .4s all;
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+.btn-secondary {
+    min-width: 234px;
+    height: 46px;
+    transition: .4s all;
+    background-color: var(--text-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+    width: fit-content;
+}
+.btn-secondary:hover {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+/* -----------------home css-------------------- */
+.banner-section .text-wrapper {
+    background-color: #171D28;
+}
+.productSwiper .badge {
+    top: 15px;
+    left: 15px;
+}
+.product-swiper  {
+    margin-left: 12.4%;
+}
+.productSwiper .whislist-btn{
+    top: 15px;
+    right: 15px;
+    height: 32px;
+    width: 32px;
+    background-color: var(--white-color);
+    transition: .4s all;
+}
+
+.productSwiper .whislist-btn:hover {
+    background-color: var(--text-color);
+    transition: .4s all;
+}
+.productSwiper .whislist-btn:hover img {
+    filter: brightness(13);
+    transition: .4s all;
+}
+.productSwiper .btn-secondary  {
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.productSwiper .swiper-pagination {
+    top: -50px;
+    right: 142px;
+    left: auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.productSwiper .swiper-pagination-bullet {
+    content: '';
+    background-image: url(/assets/svgs/slider-dot.svg);
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+    opacity: 1;
+}
+.productSwiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    content: '';
+
+    background-image: url(/assets/svgs/slider-dot-active.svg);
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+}
+.swiper-button-next , .swiper-button-prev {
+    display: none;
+}
+.product-swiper .btn-secondary {
+    bottom: 110px;
+}
+.filter-primary:hover img , .group-filter-primary:hover a img{
+    transition: .5s all;
+    filter: brightness(0) saturate(100%) invert(36%) sepia(98%) saturate(1697%) hue-rotate(207deg) brightness(102%) contrast(103%);
+}
+.indicator-bar a:hover img {
+    filter: brightness(0) saturate(100%) invert(5%) sepia(19%) saturate(445%) hue-rotate(149deg) brightness(99%) contrast(91%);
+}
+.filter-secondary:hover img {
+    transition: .5s all;
+    filter: brightness(0) saturate(100%) invert(36%) sepia(98%) saturate(1697%) hue-rotate(207deg) brightness(102%) contrast(103%);
+}
