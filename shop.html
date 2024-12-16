@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3legant</title>
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <!-- Font Awesome Free CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+  <section class="bg-lightBlue2 text-white text-center py-2 flex items-center justify-center">
+    <div class="site-container">
+
+      <h6 class="mb-0  text-sm flex items-center justify-center text-textColor">
+        <img src="/assets/svgs/ticket-percent-dark.svg" alt="ticket-percent" class="me-2">30% off storewide — Limited time! <a href="#" class="ms-2 border-b text-primary pb-1  flex items-center hover:text-textColor border-primary hover:border-textColor">Shop Now <img src="/assets/svgs/arrow-right-primary.svg" alt="arrow-right" class="ml-1"></a></h6>
+    </div>
+  </section>
+  <header class="bg-white py-3">
+    <div class="site-container">
+      <div class="row items-center flex justify-between">
+        <div class="col-lg-3">
+          <a href="/">
+
+            <img src="/assets/svgs/Logo.svg" alt="Logo">
+          </a>
+
+        </div>
+        <div class="col-lg-6">
+          <nav>
+            <ul class="flex items-center gap-10  text-sm">
+              <li>
+                <a href="/home" class="border-b-2 pb-1 border-transparent hover:border-primary">Home</a>
+              </li>
+              <li>
+                <a href="/shop" class="border-b-2 pb-1 border-transparent hover:border-primary">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Products</a>
+              </li>
+              <li>
+                <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="flex items-center gap-2  text-sm justify-end">
+            <a href="#" class="filter-primary transition-all duration-500">
+            <img src="/assets/svgs/search.svg" alt="search">
+            </a>
+            <a href="#" class="filter-primary transition-all duration-500">
+
+              <img src="/assets/svgs/user-circle.svg" alt="user-circle">
+            </a>
+            <a href="#" class="filter-primary transition-all duration-500">
+
+              <img src="/assets/svgs/shopping-bag.svg" alt="shopping-bag">
+            </a>
+            <span class="rounded-full  product-count text-white flex items-center  justify-center  font-bold hover:bg-primary cursor-pointer">3</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="site-container shop-banner flex items-center justify-center">
+      <div class="flex flex-col gap-3 justify-center w-full items-center">
+
+        <h1 class="main-heading text-54 font-medium text-textColor">
+          Shop Page
+        </h1>
+  
+        <p class="text-textColor text-xl">Let&apos;s design the place you always imagined.</p>
+      </div>
+    </section>
+    <section class="filters site-container">
+      <div class="grid grid-cols-2 justify-between w-full">
+        <div class="grid grid-cols-2 gap-5">
+          <div class="flex flex-col gap-2 text-lightGrey text-base font-semibold">
+            CATEGORIES
+            <select class="border-2 border-lightGrey rounded-md p-2 w-full text-textColor font-semibold focus:outline-none">
+              <option>Living Room</option>
+              <option>Drawing Room</option>
+            </select>
+          </div>
+          <div class="flex flex-col gap-2 text-lightGrey text-base font-semibold">
+            PRICE
+            <select class="border-2 border-lightGrey rounded-md p-2 w-full text-textColor font-semibold focus:outline-none">
+              <option>All Price</option>
+              <option>0-100</option>
+            </select>
+          </div>
+        </div>
+        <div> 
+          <div class="flex flex-col gap-2 text-lightGrey text-base font-semibold">
+          
+          <select class="max-w-20 w-fit text-textColor font-semibold focus:outline-none">
+            <option>Sort by</option>
+          </select>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="site-container">
+
+        <div class=" grid grid-cols-4 gap-x-5  gap-y-16 mt-10">
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-1.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Loveseat Sofa</p>
+              <p class="text-sm font-semibold text-textColor">
+                $199.00  <del class="text-lightGrey ml-2">$400.00</del>
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-2.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Luxury Sofa</p>
+              <p class="text-sm font-semibold text-textColor">
+                $299.00  <del class="text-lightGrey ml-2">$500.00</del>
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-3.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Table Lamp</p>
+              <p class="text-sm font-semibold text-textColor">
+                $19.00
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-4.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Cozy Sofa</p>
+              <p class="text-sm font-semibold text-textColor">
+                $299.00
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-5.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">White Drawer unit</p>
+              <p class="text-sm font-semibold text-textColor">
+                $89.99
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-6.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Black Tray table</p>
+              <p class="text-sm font-semibold text-textColor">
+                $19.99
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-7.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Table Lamp</p>
+              <p class="text-sm font-semibold text-textColor">
+                $19.00
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-8.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Black Brow Side table</p>
+              <p class="text-sm font-semibold text-textColor">
+                $16.99
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-9.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Light Beige Pillow</p>
+              <p class="text-sm font-semibold text-textColor">
+                $3.99
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-10.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Table Lamp</p>
+              <p class="text-sm font-semibold text-textColor">
+                $39.99
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-11.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Bamboo Basket</p>
+              <p class="text-sm font-semibold text-textColor">
+                $9.99
+              </p>
+            </div>
+          </div>
+          <div class="cursor-pointer group">
+    
+            <div class="relative overflow-hidden ">
+    
+              <span class="badge bg-white font-bold px-4 py-0.5  z-10 uppercase  rounded-md text-uppercase text-base text-black top-3 left-3 absolute">new</span>
+              <span class="badge bg-secondary font-bold px-4 py-0.5 uppercase z-10  rounded-md text-uppercase text-base text-white top-12 left-3 absolute">-50%</span>
+              <img src="/assets/images/product-12.png" class="w-full group-hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-1 relative top-3">
+    
+              <div class="flex items-center gap-1">
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+                <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
+              </div>
+              <p class="text-base font-semibold group-hover:text-primary">Off-white Pillow</p>
+              <p class="text-sm font-semibold text-textColor">
+                $7.99
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class=" text-textColor bg-lightBlue py-20 mt-8">
+    <div class="site-container">
+
+      <div class="grid grid-cols-3">
+        <div class="flex flex-col gap-7">
+          <img src="/assets/svgs/Logo.svg" alt="website-logo" class="max-w-24">
+          <div class="flex flex-col gap-3">
+
+            <p class="text-sm">43111 Hai Trieu street,</p>
+            <p class="text-sm">District 1, HCMC</p>
+            <p class="text-sm">Vietnam</p>
+            <a href="tel:84-756-3237" class="text-sm hover:text-primary mt-3">84-756-3237</a>
+            <div class="flex items-center gap-5 mt-5">
+              <a href="#">
+      
+                <img src="/assets/svgs/instagram.svg" alt="instagram-icon">
+              </a>
+              <a href="#">
+      
+                <img src="/assets/svgs/facebook.svg" alt="facebook-icon">
+              </a>
+              <a href="#">
+      
+                <img src="/assets/svgs/youtube.svg" alt="youtube-icon">
+              </a>
+            </div>
+          </div>
+    
+        </div>
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col gap-7">
+            <h6 class="text-base font-medium">Page</h6>
+            <ul class="flex flex-col gap-6">
+              <li class="text-sm text-textColor">
+                <a href="#">
+                  Home
+                </a>
+                
+                </li>
+                <li class="text-sm text-textColor">
+                  <a href="#">
+                  Shop
+                </a>
+              </li>
+              <li class="text-sm text-textColor">
+                <a href="#">
+                  Product
+                </a>
+              </li>
+              <li class="text-sm text-textColor"> <a href="#">
+                Articles
+              </a>
+            </li>
+            <li class="text-sm text-textColor"> <a href="#">
+              Contact Us
+            </a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-7">
+            <h6 class="text-base font-medium">Info</h6>
+            <ul class="flex flex-col gap-6">
+              <li class="text-sm text-textColor">
+                <a href="#">
+                  Shipping Policy
+                </a>
+                
+                </li>
+                <li class="text-sm text-textColor">
+                  <a href="#">
+                    Return & Refund
+                </a>
+              </li>
+              <li class="text-sm text-textColor">
+                <a href="#">
+                  Support
+                </a>
+              </li>
+              <li class="text-sm text-textColor"> <a href="#">
+                FAQs
+              </a>
+            </li>
+            </ul>
+          </div>
+          </div>
+          <div class="flex flex-col gap-7">
+            <h6 class="text-base font-medium">Join Newsletter</h6>
+            <p class="text-sm">Subscribe our newsletter to get more deals, new <br> products and promotions</p>
+            <div class="flex items-center justify-between border border-slate-300 rounded-full p-1">
+    
+              <input type="text" placeholder="Enter your email" class="text-sm focus:outline-none  bg-transparent px-2 placeholder:text-lightGrey w-full">
+              <img src="assets/svgs/bg-circle-cion.svg" alt="send-email-bttn" class="transition-all duration-500 hover:scale-105 cursor-pointer hover:opacity-90">
+            </div>
+          </div>
+    
+      </div>
+      <hr class="border-lightGrey mt-16 mb-10">
+      <div class="grid grid-cols-2">
+        <div class="flex items-center gap-5 whitespace-nowrap">
+          <span>Copyright © 2023  <a href="/">3legant.</a> All rights reserved</span> 
+         <span>|</span> <a href="#" >Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+        <div class="flex justify-end items-center">
+          <img src="assets/images/payment-methods.png" alt="payment-methods" class="max-w-56">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ <!-- Bootstrap 5 JS Bundle CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Swiper.js JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="/js/script.js"></script>
+</body>
+</html>

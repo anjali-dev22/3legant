@@ -7,11 +7,13 @@ tailwind.config = {
         textColor: '#141718',
         lightGrey: '#6C7275',
         secondary: '#38cb89',
-        lightBlue: '#E8ECEF'
+        lightBlue: '#E8ECEF',
+        lightBlue2: '#F3F5F7'
       },
       fontSize: {
          '22': '22px',
-        '34': '34px'
+        '34': '34px',
+        '54': '54px'
       },
       borderColor: {
         primary: '#377dff',
