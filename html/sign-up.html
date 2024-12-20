@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3legant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden">
+
+   <div class="grid grid-cols-2 gap-24 max-h-screen overflow-hidden flex items-center justify-center">
+    <div class="bg-[#f2f4f6]">
+        <img src="/assets/svgs/Logo.svg" alt="logo" class="mx-auto relative top-10"/>
+        <img src="/assets/images/signin-banner.png" alt="signin-banner" class="h-full w-full object-cover max-h-screen"/>
+    </div>
+    <div class=" flex flex-col gap-5 max-w-xl max-h-screen">
+        <h2 class="heading2 font-semibold text-left">
+            Sign up
+        </h2>
+        <p class="text-lightGrey text-base">Already have an account?  <a href="#" class="text-green font-semibold">Sign In</a> </p>
+        <form action="" class="w-full flex flex-col gap-10 mt-5">
+            <div class="input-field">
+                <input type="text" placeholder="Your name" class=" w-full focus:outline-none border-b pb-2 text-base font-normal">
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Username" class=" w-full focus:outline-none border-b pb-2 text-base font-normal">
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Email Address" class=" w-full focus:outline-none border-b pb-2 text-base font-normal">
+            </div>
+            <div class="input-field border-b pb-2 flex items-center justify-between">
+                <input type="password" placeholder="Password" class=" w-full focus:outline-none  text-base font-normal">
+                <img src="/assets/svgs/eye.svg" alt="eye" class="mx-auto"/>
+            </div>
+            <label class="text-base text-lightGrey flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" name="checkbox" value="value" class="w-5 h-5">
+                I agree with <a href="#" class="font-semibold text-textColor">Privacy Policy</a>  and  <a href="#" class="font-semibold text-textColor">Terms of Use</a>
+             </label>
+             <div class=" w-full">
+                <button class="bg-textColor text-white transition-all border border-textColor p-3 rounded-xl  w-full duration-500 hover:bg-transparent hover:text-textColor w-full" type="button">Sign Up</button>
+               </div>
+        </form>
+    </div>
+
+   </div>
+</body>
+<script src="/js/script.js"></script>
+
+</html>

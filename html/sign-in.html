@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3legant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden">
+
+   <div class="grid grid-cols-2 gap-24 max-h-screen overflow-hidden flex items-center justify-center">
+    <div class="bg-[#f2f4f6]">
+        <img src="/assets/svgs/Logo.svg" alt="logo" class="mx-auto relative top-10"/>
+        <img src="/assets/images/signin-banner.png" alt="signin-banner" class="h-full w-full object-cover max-h-screen"/>
+    </div>
+    <div class=" flex flex-col gap-5 max-w-xl max-h-screen">
+        <h2 class="heading2 font-semibold text-left">
+            Sign In
+        </h2>
+        <p class="text-lightGrey text-base">Don&apos;t have an accout yet?  <a href="#" class="text-green font-semibold">Sign Up</a> </p>
+        <form action="" class="w-full flex flex-col gap-10 mt-5">
+            <div class="input-field">
+                <input type="text" placeholder="Your usernam or email address" class=" w-full focus:outline-none border-b pb-2 text-base font-normal">
+            </div>
+            <div class="input-field border-b pb-2 flex items-center justify-between">
+                <input type="password" placeholder="Password" class=" w-full focus:outline-none  text-base font-normal">
+                <img src="/assets/svgs/eye.svg" alt="eye" class="mx-auto"/>
+            </div>
+            <div class="flex items-center justify-between">
+
+                <label class="text-base text-lightGrey flex items-center gap-2 cursor-pointer">
+                    <input type="checkbox" name="checkbox" value="value" class="w-5 h-5">
+                    Remember me
+                 </label>
+                 <a href="#" class="text-base font-semibold">Forgot password?</a>
+            </div>
+            <div class=" w-full">
+                <button class="bg-textColor text-white transition-all border border-textColor p-3 rounded-xl  w-full duration-500 hover:bg-transparent hover:text-textColor w-full" type="button">Sign In</button>
+               </div>
+        </form>
+    </div>
+
+   </div>
+</body>
+<script src="/js/script.js"></script>
+
+</html>

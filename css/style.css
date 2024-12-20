@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
     --primary-color: #377dff;
     --secondary-color: #38cb89;
@@ -8,7 +11,11 @@ body {
   margin: 0;
   padding: 0;
   color: var( --text-color);
+  font-family: "Inter", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
+
 .site-container {
     max-width: 1120px;
     margin: auto;
