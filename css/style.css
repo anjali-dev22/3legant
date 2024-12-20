@@ -160,3 +160,41 @@ header .product-count {
     width: 100%;
     min-height: 392px;
 }
+.blog-banner {
+    background-image: url(/assets/images/blog-bg.png);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    min-height: 392px;
+}
+.news-letter {
+    background-image: url(/assets/images/news-letterimg.png);
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    min-height: 392px;
+}
+.dark-footer .social-icon img {
+    filter: brightness(0) saturate(100%) invert(98%) sepia(6%) saturate(325%) hue-rotate(276deg) brightness(115%) contrast(100%);
+}
+.nav-tabs .nav-link.active, .account-pills.active  {
+    border: none;
+    border-bottom: 2px solid #000;
+    color: #000 !important;
+}
+.nav-tabs  .nav-link, .account-pills {
+    border-bottom: 2px solid transparent;
+    color: #6C7275;
+}
+.tab-pane {
+    display: none;
+}
+.fade:not(.show) {
+    display: none;
+}
+.tab-pane.fade.show.active {
+    display: block;
+}
+#pills-wishlist table td {
+    width: 41.33%;
+}

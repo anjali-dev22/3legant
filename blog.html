@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3legant</title>
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <!-- Font Awesome Free CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+ 
+  <header class="bg-white py-3">
+    <div class="site-container">
+      <div class="row items-center flex justify-between">
+        <div class="col-lg-3">
+          <a href="/">
+
+            <img src="/assets/svgs/Logo.svg" alt="Logo">
+          </a>
+
+        </div>
+        <div class="col-lg-6">
+          <nav>
+            <ul class="flex items-center gap-10  text-sm">
+              <li>
+                <a href="/home" class="border-b-2 pb-1 border-transparent hover:border-primary">Home</a>
+              </li>
+              <li>
+                <a href="/shop" class="border-b-2 pb-1 border-transparent hover:border-primary">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Products</a>
+              </li>
+              <li>
+                <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="flex items-center gap-2  text-sm justify-end">
+            <a href="#" class="filter-primary transition-all duration-500">
+            <img src="/assets/svgs/search.svg" alt="search">
+            </a>
+            <a href="#" class="filter-primary transition-all duration-500">
+
+              <img src="/assets/svgs/user-circle.svg" alt="user-circle">
+            </a>
+            <a href="#" class="filter-primary transition-all duration-500">
+
+              <img src="/assets/svgs/shopping-bag.svg" alt="shopping-bag">
+            </a>
+            <span class="rounded-full  product-count text-white flex items-center  justify-center  font-bold hover:bg-primary cursor-pointer">3</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="site-container blog-banner flex items-center justify-center">
+      <div class="flex flex-col gap-3 justify-center w-full items-center">
+        <ul class="breadcrumb flex items-center gap-2 text-sm">
+          <li><a href="#" class="text-lightGrey">Home</a></li>
+          <li class="text-lightGrey">></li>
+          <li><a href="#" class="text-textColor">Blog</a></li>
+        </ul>
+        <h1 class="main-heading text-54 font-medium text-textColor">
+            Our Blog
+        </h1>
+  
+        <p class="text-textColor text-xl">Home ideas and design inspiration</p>
+      </div>
+    </section>
+    <section class="filters site-container mt-10">
+      <div class="grid grid-cols-2 justify-between w-full">
+        <div class="flex items-center gap-10">
+          <span class="text-textColor text-base font-semibold border-b-2 border-textColor hover:text-primary cursor-pointer hover:border-primary">
+            All blog
+           
+          </span>
+          <span class="text-lightGrey text-base font-semibold border-b-2 border-transparent hover:text-primary cursor-pointer hover:border-primary">
+            Featured
+           
+          </span>
+        </div>
+        <div class="flex items-center justify-end"> 
+          <div class="flex gap-2 text-textColor text-base font-semibold items-center">
+          Sort by
+          <span class="border-2 border-slate-200 flex items-center justify-between">
+            <span class="p-2 border-r">
+              <img src="assets/svgs/sort1.svg" alt="sort-icon">
+            </span>
+            <span class="p-2 active bg-lightBlue2 border-r">
+              <img src="assets/svgs/sort2.svg" alt="sort-icon">
+            </span>
+            <span class="p-2 border-r">
+              <img src="assets/svgs/sort3.svg" alt="sort-icon">
+            </span>
+            <span class="p-2">
+              <img src="assets/svgs/sort4.svg" alt="sort-icon">
+            </span>
+          </span>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="site-container">
+
+        <div class=" grid grid-cols-3 gap-x-5  gap-y-10 mt-10">
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog1.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">7 ways to decor your home like a professional</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog2.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">Inside a beautiful kitchen organization</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog3.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">Decor your bedroom for your children</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog4.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">Modern texas home is beautiful and completely kid-friendly</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog5.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">Modern texas home is beautiful and completely kid-friendly</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog6.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">Modern texas home is beautiful and completely kid-friendly</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog6.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">Modern texas home is beautiful and completely kid-friendly</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog7.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">Modern texas home is beautiful and completely kid-friendly</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="relative overflow-hidden ">
+              <img src="/assets/images/blog8.png" class="cursor-pointer w-full hover:scale-105 transition-all duration-500 relative z-0">
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-xl font-semibold hover:text-primary cursor-pointer pr-5">Modern texas home is beautiful and completely kid-friendly</p>
+              <p class="text-xs font-normal text-lightGrey">
+                October 16, 2023
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-20">
+          <button class="border !border-textColor rounded-full p-2 min-w-36 transition-all  duration-500 hover:bg-textColor hover:text-white">Show more</button>
+      </div>
+      </div>
+    </section>
+    <section class="news-letter mt-20 flex items-center justify-center">
+      <div class="flex flex-col gap-4 w-1/3">
+
+        <h2 class="heading2 font-medium text-center">
+          Join Our Newsletter
+        </h2>
+        <p class="text-lg text-center">Sign up for deals, new products and promotions</p>
+        <div class="flex border-b border-lightGrey justify-between items-center pb-1 mt-4">
+          <div class="flex gap-2  items-center">
+
+            <img src="/assets/svgs/email.svg">
+            <input type="text" class="border-none bg-transparent placeholder:text-lightGrey" placeholder="Email address">
+          </div>
+  <button class="text-lightGrey border-0 shadow-none hover:text-primary">Signup</button>
+        </div>
+  
+      </div>
+    </section>
+  </main>
+
+  <footer class=" text-textColor bg-textColor text-white pt-20 pb-10 dark-footer">
+    <div class="site-container">
+
+      <div class="grid grid-cols-2 justify-between  items-center text-sm">
+        <div class="flex items-center gap-10">
+
+          <img src="/assets/svgs/white-Logo.svg" alt="footer-logo">
+          <span class="text-lightGrey">|</span>
+          <a href="#">Gift &amp; Decoration Store</a>
+        </div>
+        <div class="flex items-center gap-10 justify-end">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Product</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <hr class="border-lightGrey my-10">
+      <div class="grid grid-cols-2">
+        <div class="flex items-center gap-5 whitespace-nowrap text-xs text-white">
+          <span>Copyright © 2023  <a href="/">3legant.</a> All rights reserved</span> 
+         <span>|</span> <a href="#" class="font-semibold" >Privacy Policy</a>
+          <a href="#" class="font-semibold">Terms &amp; Conditions</a>
+        </div>
+        <div class="flex justify-end items-center">
+          <div class="flex items-center gap-5 mt-5 social-icon">
+            <a href="#">
+    
+              <img src="/assets/svgs/instagram.svg" alt="instagram-icon">
+            </a>
+            <a href="#">
+    
+              <img src="/assets/svgs/facebook.svg" alt="facebook-icon">
+            </a>
+            <a href="#">
+    
+              <img src="/assets/svgs/youtube.svg" alt="youtube-icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ <!-- Bootstrap 5 JS Bundle CDN -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Swiper.js JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="/js/script.js"></script>
+</body>
+</html>

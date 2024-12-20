@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3legant</title>
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <header class="bg-white py-3">
+        <div class="site-container">
+            <div class="row items-center flex justify-between">
+                <div class="col-lg-3">
+                    <a href="/">
+
+                        <img src="/assets/svgs/Logo.svg" alt="Logo">
+                    </a>
+
+                </div>
+                <div class="col-lg-6">
+                    <nav>
+                        <ul class="flex items-center gap-10  text-sm">
+                            <li>
+                                <a href="/home" class="border-b-2 pb-1 border-transparent hover:border-primary">Home</a>
+                            </li>
+                            <li>
+                                <a href="/shop" class="border-b-2 pb-1 border-transparent hover:border-primary">Shop</a>
+                            </li>
+                            <li>
+                                <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Products</a>
+                            </li>
+                            <li>
+                                <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Contact
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="flex items-center gap-2  text-sm justify-end">
+                        <a href="#" class="filter-primary transition-all duration-500">
+                            <img src="/assets/svgs/search.svg" alt="search">
+                        </a>
+                        <a href="#" class="filter-primary transition-all duration-500">
+
+                            <img src="/assets/svgs/user-circle.svg" alt="user-circle">
+                        </a>
+                        <a href="#" class="filter-primary transition-all duration-500">
+
+                            <img src="/assets/svgs/shopping-bag.svg" alt="shopping-bag">
+                        </a>
+                        <span
+                            class="rounded-full  product-count text-white flex items-center  justify-center  font-bold hover:bg-primary cursor-pointer">3</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-20">
+        <section class="site-container  ">
+            <h1 class="heading1 font-medium text-center">Check Out</h1>
+            <div class="flex items-center justify-between w-full max-w-3xl gap-10 mt-10 mx-auto">
+                <span class="flex items-center gap-3 step-1 border-b-2 border-green pb-5 w-full ">
+                    <span
+                        class="bg-green flex items-center justify-center h-10 w-10 text-base text-white font-semibold rounded-full"><i class="fa-solid fa-check"></i></span>
+                    <span class="text-base text-green">Shopping cart</span>
+                </span>
+                <span class="flex items-center gap-3 step-1 border-b-2 border-textColor pb-5 w-full ">
+                    <span
+                        class="bg-textColor flex items-center justify-center h-10 w-10 text-base text-white font-semibold rounded-full">2</span>
+                    <span class="text-base text-textColor">Checkout details
+                    </span>
+                </span>
+                <span class="flex items-center gap-3 w-full border-b-2 border-transparent pb-5">
+                    <span
+                        class="bg-lightGrey2  flex items-center justify-center h-10 w-10 text-base text-white font-semibold rounded-full">3</span>
+                    <span class="text-base text-lightGrey2">Order complete</span>
+                </span>
+            </div>
+            <div class="flex gap-12 w-full pt-20">
+                <div class="w-4/5">
+                    <div class="border border-lightGrey rounded-md px-3 py-6 mb-5">
+                        <h5 class="font-medium text-xl">Contact Infomation</h5>
+                        <form action="" class="mt-5">
+                            <div class="grid grid-cols-2 gap-5">
+                                <div class="input-group flex flex-col gap-2">
+                                    <label for="firstName" class="text-xs text-lightGrey uppercase font-medium">First Name</label>
+                                    <input type="text" name="" id="" placeholder="First name" class="border-lightGrey2 border rounded-md p-2">
+                                </div>
+                                <div class="input-group flex flex-col gap-2">
+                                    <label for="lastName" class="text-xs text-lightGrey uppercase font-medium">Last Name</label>
+                                    <input type="text" name="" id="" placeholder="Last name" class="border-lightGrey2 border rounded-md p-2">
+                                </div>
+                            </div>
+                            <div class="input-group flex flex-col gap-2 mt-5">
+                                <label for="number" class="text-xs text-lightGrey uppercase font-medium">Phone number</label>
+                                <input type="tel" name="" id="" placeholder="Phone number" class="border-lightGrey2 border rounded-md p-2">
+                            </div>
+                            <div class="input-group flex flex-col gap-2 mt-5">
+                                <label for="email" class="text-xs text-lightGrey uppercase font-medium">Email Address</label>
+                                <input type="text" name="" id="" placeholder="Your Email" class="border-lightGrey2 border rounded-md p-2">
+                            </div>
+                        </form>
+                       </div>
+                       <div class="border border-lightGrey rounded-md px-3 py-6 mb-5">
+                        <h5 class="font-medium text-xl">Shipping Address</h5>
+                        <form action="" class="mt-5">
+                            <div class="input-group flex flex-col gap-2">
+                                <label for="streetaddress" class="text-xs text-lightGrey uppercase font-medium">Street Address *</label>
+                                <input type="text" name="" id="" placeholder="Stress Address" class="border-lightGrey2 border rounded-md p-2">
+                            </div>
+                            <div class="input-group flex flex-col gap-2 mt-5">
+                                <label for="country" class="text-xs text-lightGrey uppercase font-medium">Country *</label>
+                                <select class="border-lightGrey2 border rounded-md p-2">
+                                    <option>Country</option>
+                                </select>
+                            </div>
+                            <div class="input-group flex flex-col gap-2 mt-5">
+                                <label for="city" class="text-xs text-lightGrey uppercase font-medium">Town / City *</label>
+                                <select class="border-lightGrey2 border rounded-md p-2">
+                                    <option>Town / City</option>
+                                </select>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-5 mt-5">
+                                <div class="input-group flex flex-col gap-2">
+                                    <label for="state" class="text-xs text-lightGrey uppercase font-medium">State</label>
+                                    <input type="text" name="" id="" placeholder="State" class="border-lightGrey2 border rounded-md p-2">
+                                </div>
+                                <div class="input-group flex flex-col gap-2">
+                                    <label for="zipcode" class="text-xs text-lightGrey uppercase font-medium">Zip Code</label>
+                                    <input type="text" name="" id="" placeholder="Zip Code" class="border-lightGrey2 border rounded-md p-2">
+                                </div>
+                            </div>
+                        </form>
+                       </div>
+                       <div class="border border-lightGrey rounded-md px-3 py-6">
+                        <h5 class="font-medium text-xl">Payment Method</h5>
+                        <form action="" class="mt-5">
+                            <label
+                            class="flex items-center justify-between border rounded-md px-4 py-3 cursor-pointer mb-2 transition-all duration-300 relative">
+                            <span class="flex items-center gap-2">
+
+                                <input type="radio" name="payment" value="CreditCard" class="checked peer h-4 w-4" />
+                                <span class="text-gray-700">Pay by Card Credit</span>
+                                <div
+                                    class="absolute inset-0 peer-checked:bg-lightBlue2 rounded-md -z-10 border border-lightGrey2 peer-checked:border-textColor">
+                                </div>
+                            </span>
+                            <span class="text-gray-700 font-medium"><img src="/assets/svgs/credit-card.svg" alt="credit-card"/></span>
+
+                        </label>
+                        <label
+                            class="flex items-center justify-between border rounded-md px-4 py-3 cursor-pointer mb-2 transition-all duration-300 relative mt-5">
+                            <span class="flex items-center gap-2">
+
+                                <input type="radio" name="payment" value="Paypal" class="checked peer h-4 w-4" />
+                                <span class="text-gray-700">Paypal</span>
+                                <div
+                                    class="absolute inset-0 peer-checked:bg-lightBlue2 rounded-md -z-10 border border-lightGrey2 peer-checked:border-textColor">
+                                </div>
+                            </span>
+                           
+
+                        </label>
+                        <hr class="border-lightGrey2 my-7">
+                            <div class="input-group flex flex-col gap-2">
+                                <label for="card-number" class="text-xs text-lightGrey uppercase font-medium">Card Number</label>
+                                <input type="text" name="" id="" placeholder="1234 1234 1234" class="border-lightGrey2 border rounded-md p-2">
+                            </div>
+                            
+                            
+                            <div class="grid grid-cols-2 gap-5 mt-5">
+                                <div class="input-group flex flex-col gap-2">
+                                    <label for="Expirationdate" class="text-xs text-lightGrey uppercase font-medium">Expiration Date</label>
+                                    <input type="text" name="" id="" placeholder="MM/YY" class="border-lightGrey2 border rounded-md p-2">
+                                </div>
+                                <div class="input-group flex flex-col gap-2">
+                                    <label for="cvc" class="text-xs text-lightGrey uppercase font-medium">CVC</label>
+                                    <input type="text" name="" id="" placeholder="CVC code" class="border-lightGrey2 border rounded-md p-2">
+                                </div>
+                            </div>
+                        </form>
+                       </div>
+                       <div class="mt-6">
+                        <button class="bg-textColor text-white transition-all border border-textColor p-3 rounded-md  w-full duration-500 hover:bg-transparent hover:text-textColor" type="button">Place Order</button>
+                       </div>
+                </div>
+                <div class="w-1/3">
+                    <div class="w-full border border-lightGrey rounded-md p-4">
+                        <h6 class="text-xl font-medium mb-4">Order summary</h6>
+                        <div class="flex flex-col gap-10">
+
+                            <div class="flex justify-between border-b pb-5">
+    
+                                <span class="flex gap-3">
+                                    <img src="/assets/images/table-black.png" alt="product-1"
+                                        class="min-w-20  max-h-24" />
+                                    <span class="flex flex-col gap-2">
+                                        <p class="font-semibold text-sm">Tray Table</p>
+                                        <p class="text-lightGrey text-xs">Color: Black</p>
+                                        <span
+                                        class="border border-lightGrey rounded-md p-2 flex items-center gap-5 text-xs w-fit min-w-24 justify-center">
+                                        <span><i class="fa-solid fa-minus text-lightGrey cursor-pointer text-xs"></i></span>
+                                        <span>4</span>
+                                        <span><i class="fa-solid fa-plus text-lightGrey cursor-pointer text-xs"></i></span>
+                                    </span>
+                                    </span>
+                                </span>
+                                <span class="text-sm font-semibold">$38.00</span>
+                            </div>
+                            <div class="flex justify-between border-b pb-5">
+    
+                                <span class="flex gap-3">
+                                    <img src="/assets/images/table-black.png" alt="product-1"
+                                        class="min-w-20  max-h-24" />
+                                    <span class="flex flex-col gap-2">
+                                        <p class="font-semibold text-sm">Tray Table</p>
+                                        <p class="text-lightGrey text-xs">Color: Black</p>
+                                        <span
+                                        class="border border-lightGrey rounded-md p-2 flex items-center gap-5 text-xs w-fit min-w-24 justify-center">
+                                        <span><i class="fa-solid fa-minus text-lightGrey cursor-pointer text-xs"></i></span>
+                                        <span>4</span>
+                                        <span><i class="fa-solid fa-plus text-lightGrey cursor-pointer text-xs"></i></span>
+                                    </span>
+                                    </span>
+                                </span>
+                                <span class="text-sm font-semibold">$38.00</span>
+                            </div>
+                            <div class="flex justify-between border-b pb-5">
+    
+                                <span class="flex gap-3">
+                                    <img src="/assets/images/table-black.png" alt="product-1"
+                                        class="min-w-20  max-h-24" />
+                                    <span class="flex flex-col gap-2">
+                                        <p class="font-semibold text-sm">Tray Table</p>
+                                        <p class="text-lightGrey text-xs">Color: Black</p>
+                                        <span
+                                        class="border border-lightGrey rounded-md p-2 flex items-center gap-5 text-xs w-fit min-w-24 justify-center">
+                                        <span><i class="fa-solid fa-minus text-lightGrey cursor-pointer text-xs"></i></span>
+                                        <span>4</span>
+                                        <span><i class="fa-solid fa-plus text-lightGrey cursor-pointer text-xs"></i></span>
+                                    </span>
+                                    </span>
+                                </span>
+                                <span class="text-sm font-semibold">$38.00</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between gap-3">
+                            <input type="text" class="border border-lightGrey2 p-2 rounded-md" placeholder="input">
+                            <button class="bg-textColor text-white transition-all border border-textColor p-2 rounded-md  w-full duration-500 hover:bg-transparent hover:text-textColor" type="button">Apply</button>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-lightGrey2 mt-5 pb-3">
+                            <span class="text-base font-normal">Shipping</span>
+                            <span class="text-base font-semibold">Free</span>
+                           </div>
+                   <div class="flex items-center justify-between border-b border-lightGrey2 mt-5 pb-3">
+                    <span class="text-base font-normal">Subtotal</span>
+                    <span class="text-base font-semibold">$1234.00</span>
+                   </div>
+                   <div class="flex items-center justify-between mt-3">
+                    <span class="text-xl font-semibold">Total</span>
+                    <span class="text-xl font-semibold">$1345.00</span>
+                   </div>
+                   <div class="mt-10">
+                    <button class="bg-textColor text-white transition-all border border-textColor p-2 rounded-md  w-full duration-500 hover:bg-transparent hover:text-textColor" type="button">Checkout</button>
+                   </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class=" text-textColor bg-textColor text-white pt-20 pb-10 dark-footer">
+        <div class="site-container">
+
+            <div class="grid grid-cols-2 justify-between  items-center text-sm">
+                <div class="flex items-center gap-10">
+
+                    <img src="/assets/svgs/white-Logo.svg" alt="footer-logo">
+                    <span class="text-lightGrey">|</span>
+                    <a href="#">Gift &amp; Decoration Store</a>
+                </div>
+                <div class="flex items-center gap-10 justify-end">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Product</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+            <hr class="border-lightGrey my-10">
+            <div class="grid grid-cols-2">
+                <div class="flex items-center gap-5 whitespace-nowrap text-xs text-white">
+                    <span>Copyright © 2023 <a href="/">3legant.</a> All rights reserved</span>
+                    <span>|</span> <a href="#" class="font-semibold">Privacy Policy</a>
+                    <a href="#" class="font-semibold">Terms &amp; Conditions</a>
+                </div>
+                <div class="flex justify-end items-center">
+                    <div class="flex items-center gap-5 mt-5 social-icon">
+                        <a href="#">
+
+                            <img src="/assets/svgs/instagram.svg" alt="instagram-icon">
+                        </a>
+                        <a href="#">
+
+                            <img src="/assets/svgs/facebook.svg" alt="facebook-icon">
+                        </a>
+                        <a href="#">
+
+                            <img src="/assets/svgs/youtube.svg" alt="youtube-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
