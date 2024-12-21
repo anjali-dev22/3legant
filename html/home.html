@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/responsive.css" rel="stylesheet">
 </head>
 <body class="overflow-x-hidden">
-  <section class="indicator-bar text-white text-center py-2 flex items-center justify-center px-10">
+  <section class="indicator-bar text-white text-center py-2 flex items-center justify-center px-10 relative z-10">
   
 <div class="flex items-center justify-between w-full">
 <div class="read-only"></div>
   <h6 class="mb-0  text-sm flex items-center justify-center">
-    <img src="/assets/svgs/ticket-percent.svg" alt="ticket-percent" class="me-2">30% off storewide — Limited time! <a href="#" class="ms-2 border-b text-white pb-1  flex items-center hover:text-textColor hover:border-textColor">Shop Now <img src="/assets/svgs/arrow-right.svg" alt="arrow-right" class="ml-1"></a></h6>
+    <img src="/assets/svgs/ticket-percent.svg" alt="ticket-percent" class="me-2">30% off storewide — Limited time! <a href="#" class="ms-2 border-b text-white pb-1  md:flex items-center hover:text-textColor hover:border-textColor hidden">Shop Now <img src="/assets/svgs/arrow-right.svg" alt="arrow-right" class="ml-1"></a></h6>
     <div class="text-right">
 
       <img src="/assets/svgs/close.svg" alt="close"/>
@@ -23,17 +24,23 @@
 </div>
    
   </section>
-  <header class="bg-white py-3">
+  <header class="bg-white py-3 relative z-10">
     <div class="site-container">
       <div class="row items-center flex justify-between">
-        <div class="col-lg-3">
+        
+      
+        <div  class="col-lg-3 flex items-center">
+          <span id="menu-div" class="md:hidden block">
+            <img src="/assets/svgs/menu-close.svg" alt="menu-close" class="min-w-10 p-2 menu-close" />
+            <img src="/assets/svgs/menu-toggle.svg" alt="menu-toggle" class="min-w-10 menu-toggle" />
+          </span>
           <a href="/">
 
             <img src="/assets/svgs/Logo.svg" alt="Logo">
           </a>
-
+      
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 md:block hidden">
           <nav>
             <ul class="flex items-center gap-10  text-sm">
               <li>
@@ -53,14 +60,14 @@
         </div>
         <div class="col-lg-3">
           <div class="flex items-center gap-2  text-sm justify-end">
-            <a href="#" class="filter-primary transition-all duration-500">
+            <a href="#" class="filter-primary transition-all duration-500 lg:block hidden">
             <img src="/assets/svgs/search.svg" alt="search">
             </a>
-            <a href="#" class="filter-primary transition-all duration-500">
+            <a href="#" class="filter-primary transition-all duration-500 lg:block hidden">
 
               <img src="/assets/svgs/user-circle.svg" alt="user-circle">
             </a>
-            <a href="#" class="filter-primary transition-all duration-500">
+            <a href="#" id="cart-button" class="filter-primary transition-all duration-500">
 
               <img src="/assets/svgs/shopping-bag.svg" alt="shopping-bag">
             </a>
@@ -71,15 +78,33 @@
       </div>
     </div>
   </header>
+  <div id="toggleDiv" >
+    <nav >
+      <ul class="flex items-center gap-10  text-sm flex-col p-10">
+        <li>
+          <a href="/home" class="border-b-2 pb-1 border-transparent hover:border-primary">Home</a>
+        </li>
+        <li>
+          <a href="/shop" class="border-b-2 pb-1 border-transparent hover:border-primary">Shop</a>
+        </li>
+        <li>
+          <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Products</a>
+        </li>
+        <li>
+          <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+</div>
 
   <main>
     <section class="banner-section">
 
-      <div class="row grid grid-cols-2 items-center">
+      <div class="row grid lg:grid-cols-2 items-center">
         <div class="col-md-6 p-0">
           <img src="/assets/images/placeholder-img.png" alt="placeholder-img" class="img-fluid">
         </div>
-        <div class="pl-14 text-white text-wrapper flex flex-col justify-center gap-4 h-full">
+        <div class="lg:pl-14 lg:py-0 pl-10 py-14 text-white text-wrapper flex flex-col justify-center gap-4 h-full">
           <h1 class="heading1">Bring the <br>warmth.</h1>
           <p class="fs-5">Everyone needs a good winter jacket. <br>
             Find yours with our collection and more.</p>
@@ -94,8 +119,59 @@
           <div class="col-md-12 text-center pt-10">
             <h6 class="text-xl font-semibold">Trending Brands</h6>
           </div>
-          <div class="col-md-12 text-center mt-3">
-            <div class="flex items-center justify-center gap-6">
+          <div class="swiper brands-slider mt-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide relative cursor-pointer group">
+                <a href="#">
+
+                  <img src="/assets/svgs/logo01.svg" alt="logo01">
+                </a>
+              </div>
+              <div class="swiper-slide relative cursor-pointer group">
+                <a href="#">
+
+                  <img src="/assets/svgs/logo02.svg" alt="logo02">
+                </a>
+              </div>
+              <div class="swiper-slide relative cursor-pointer group">
+                <a href="#">
+
+                  <img src="/assets/svgs/logo03.svg" alt="logo03">
+                </a>
+              </div>
+              <div class="swiper-slide relative cursor-pointer group">
+                <a href="#">
+
+                  <img src="/assets/svgs/logo04.svg" alt="logo04">
+                </a>
+              </div>
+              <div class="swiper-slide relative cursor-pointer group">
+                <a href="#">
+
+                  <img src="/assets/svgs/logo05.svg" alt="logo05">
+                </a>
+              </div>
+              <div class="swiper-slide relative cursor-pointer group">
+                <a href="#">
+
+                  <img src="/assets/svgs/logo06.svg" alt="logo06">
+                </a>
+              </div>
+            </div>
+             <!-- Add Navigation -->
+              <div class="pt-7 pb-16 flex  items-center justify-center relative">
+
+                <div class="swiper-button-next !text-transparent brands-swiper-button-next ">
+                  <img src="/assets/svgs/brands-swiper-arrow.svg" alt="arrow" class="min-w-10"/>
+                </div>
+                <div class="swiper-button-prev !text-transparent brands-swiper-button-prev ">
+                  <img src="/assets/svgs/brands-swiper-arrow.svg" alt="arrow" class="-rotate-180 min-w-10"/>
+                </div>
+              </div>
+          </div>
+
+          <!-- <div class="col-md-12 text-center mt-3 ">
+            <div class="flex items-center justify-center gap-6 overflow-auto max-w-full">
               <a href="#">
 
                 <img src="/assets/svgs/logo01.svg" alt="logo01">
@@ -116,11 +192,11 @@
             <img src="/assets/svgs/logo06.svg" alt="logo06">
             </a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
-    <section class="mt-5 product-swiper">
+    <section class="mt-5 product-swiper overflow-hidden">
       <div class="col-12 mb-5">
         <h2 class="heading2 font-semibold">Just In</h2>
       </div>
@@ -133,7 +209,7 @@
               <img src="/assets/svgs/heart-icon.svg" alt="heart-icon">
             </button>
             <img src="/assets/images/slide1.png" class="w-full group-hover:opacity-90 z-0 transition-all duration-500" alt="Slide 1">
-            <button class="btn-secondary absolute" type="button">Add to cart</button>
+            <button class="btn-secondary absolute w-[90%]" type="button">Add to cart</button>
             <div class="flex flex-col gap-1 relative top-5">
 
               <div class="flex items-center gap-1">
@@ -143,7 +219,7 @@
                 <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
                 <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               </div>
-              <p class="text-base font-semibold group-hover:text-primary transition-all duration-500  ">96 Nuptse Dip Dye Korea Puffers Jacket</p>
+              <p class="text-base font-semibold group-hover:text-primary transition-all duration-500 pr-10  ">96 Nuptse Dip Dye Korea Puffers Jacket</p>
               <p class="text-sm font-semibold text-textColor">
                 $400.00
               </p>
@@ -268,13 +344,11 @@
         <!-- Add Navigation -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
     </section>
     <section class="shop-by-cat site-container pt-24">
       <h2 class="text-4xl text-center font-medium">Shop by Categories</h2>
-      <div class="grid grid-cols-6 gap-6 mt-12">
+      <div class="grid xl:grid-cols-6 md:grid-cols-3 grid-cols-2 lg:gap-6 gap-5 mt-12">
         <div class="flex flex-col gap-2 justify-center items-center overflow-hidden group">
           <img src="/assets/images/puffer.png" alt="placeholder-img" class="object-cover rounded-full aspect-square group-hover:opacity-90 transition-all duration-500 cursor-pointer">
           <h6 class="text-sm font-semibold cursor-pointer group-hover:text-primary">Puffers</h6>
@@ -300,40 +374,40 @@
           <h6 class="text-sm font-semibold cursor-pointer group-hover:text-primary">Rainwear</h6>
         </div>
       </div>
-      <div  class="grid grid-cols-2 gap-5 mt-24">
+      <div  class="grid md:grid-cols-2 gap-5 mt-24">
         <div class="relative overflow-hidden group group-filter-primary">
 
-          <img src="/assets/images/November-Outfits.png" alt="placeholder-img" class="hover:scale-105 transition-all duration-500 cursor-pointer">
-          <div class="absolute text-white bottom-10 left-10 flex flex-col gap-2">
+          <img src="/assets/images/November-Outfits.png" alt="placeholder-img" class="w-full h-full hover:scale-105 transition-all duration-500 cursor-pointer">
+          <div class="absolute text-white lg:bottom-10 bottom-5 lg:left-10 left-5 flex flex-col gap-2">
   
-            <p class="font-medium text-34">November Outfits</p>
+            <p class="font-medium lg:lg:text-34 text-28 text-28">November Outfits</p>
             <a href="#" class="filter-primary text-base text-white font-medium flex items-center gap-1 border-b w-fit pb-1 hover:text hover:border-primary group-hover:text-primary group-hover:border-primary">Collection<img src="/assets/svgs/arrow-right.svg" alt="arrow-right" class="ml-1"></a>
           </div>
         </div>
         <div class="relative overflow-hidden group group-filter-primary">
 
-          <img src="/assets/images/cashmere-set.png" alt="placeholder-img" class="hover:scale-105 transition-all duration-500 cursor-pointer">
-          <div class="absolute text-white bottom-10 left-10 flex flex-col gap-2">
+          <img src="/assets/images/cashmere-set.png" alt="placeholder-img" class="w-full h-full hover:scale-105 transition-all duration-500 cursor-pointer">
+          <div class="absolute text-white lg:bottom-10 bottom-5 lg:left-10 left-5 flex flex-col gap-2">
   
-            <p class="font-medium text-34">Cashmere Set</p>
+            <p class="font-medium lg:text-34 text-28">Cashmere Set</p>
             <a href="#" class="filter-primary text-base text-white font-medium flex items-center gap-1 border-b w-fit pb-1 hover:text hover:border-primary group-hover:text-primary group-hover:border-primary">Collection<img src="/assets/svgs/arrow-right.svg" alt="arrow-right" class="ml-1"></a>
           </div>
         </div>
         <div class="relative overflow-hidden group group-filter-primary">
 
-          <img src="/assets/images/nordic.png" alt="placeholder-img" class="hover:scale-105 transition-all duration-500 cursor-pointer">
-          <div class="absolute text-white bottom-10 left-10 flex flex-col gap-2">
+          <img src="/assets/images/nordic.png" alt="placeholder-img" class=" w-full h-full hover:scale-105 transition-all duration-500 cursor-pointer">
+          <div class="absolute text-white lg:bottom-10 bottom-5 lg:left-10 left-5 flex flex-col gap-2">
   
-            <p class="font-medium text-34">The New Nordic</p>
+            <p class="font-medium lg:text-34 text-28">The New Nordic</p>
             <a href="#" class="filter-primary text-base text-white font-medium flex items-center gap-1 border-b w-fit pb-1 hover:text hover:border-primary group-hover:text-primary group-hover:border-primary">Collection<img src="/assets/svgs/arrow-right.svg" alt="arrow-right" class="ml-1"></a>
           </div>
         </div>
         <div class="relative overflow-hidden group group-filter-primary">
 
-          <img src="/assets/images/leather.png" alt="placeholder-img" class="hover:scale-105 transition-all duration-500 cursor-pointer">
-          <div class="absolute text-white bottom-10 left-10 flex flex-col gap-2">
+          <img src="/assets/images/leather.png" alt="placeholder-img" class="w-full h-full hover:scale-105 transition-all duration-500 cursor-pointer">
+          <div class="absolute text-white lg:bottom-10 bottom-5 lg:left-10 left-5 flex flex-col gap-2">
   
-            <p class="font-medium text-34">The Leather</p>
+            <p class="font-medium lg:text-34 text-28">The Leather</p>
             <a href="#" class="filter-primary text-base text-white font-medium flex items-center gap-1 border-b w-fit pb-1 hover:text hover:border-primary group-hover:text-primary group-hover:border-primary">Collection<img src="/assets/svgs/arrow-right.svg" alt="arrow-right" class="ml-1"></a>
           </div>
         </div>
@@ -341,7 +415,7 @@
     </section>
     <section class="best-seller site-container pt-24">
       <h2 class="text-4xl text-center font-medium">Best Seller</h2>
-      <div class=" grid grid-cols-4 gap-x-5  gap-y-16 mt-10">
+      <div class=" grid lg:grid-cols-4 grid-cols-2 gap-x-5  gap-y-16 mt-10">
         <div class="cursor-pointer group">
 
           <div class="relative overflow-hidden ">
@@ -359,7 +433,7 @@
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
             </div>
-            <p class="text-base font-semibold group-hover:text-primary">Freestyle Crew Racer leather jacket</p>
+            <p class="text-base font-semibold group-hover:text-primary product-title">Freestyle Crew Racer leather jacket</p>
             <p class="text-sm font-semibold text-textColor">
               $400.00  <del class="text-lightGrey ml-2">$1000.00</del>
             </p>
@@ -382,7 +456,7 @@
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
             </div>
-            <p class="text-base font-semibold group-hover:text-primary">1996 Retro Nuptse Cashmere Jacket in Gray</p>
+            <p class="text-base font-semibold group-hover:text-primary product-title">1996 Retro Nuptse Cashmere Jacket in Gray</p>
             <p class="text-sm font-semibold text-textColor">
               $149.99
             </p>
@@ -405,7 +479,7 @@
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
             </div>
-            <p class="text-base font-semibold group-hover:text-primary">Chilliwack black Bomber HUMANATURE</p>
+            <p class="text-base font-semibold group-hover:text-primary product-title">Chilliwack black Bomber HUMANATURE</p>
             <p class="text-sm font-semibold text-textColor">
               $1195.99
             </p>
@@ -428,7 +502,7 @@
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
             </div>
-            <p class="text-base font-semibold group-hover:text-primary">96 Nuptse Dip Dye Korea Puffers Jacket</p>
+            <p class="text-base font-semibold group-hover:text-primary product-title">96 Nuptse Dip Dye Korea Puffers Jacket</p>
             <p class="text-sm font-semibold text-textColor">
               $400.99
             </p>
@@ -451,7 +525,7 @@
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
             </div>
-            <p class="text-base font-semibold group-hover:text-primary">Oversized real leather harrington jacket in black</p>
+            <p class="text-base font-semibold group-hover:text-primary product-title">Oversized real leather harrington jacket in black</p>
             <p class="text-sm font-semibold text-textColor">
               $249.99
             </p>
@@ -474,7 +548,7 @@
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
             </div>
-            <p class="text-base font-semibold group-hover:text-primary">Men's Diamond Quilted Bomber Hoody</p>
+            <p class="text-base font-semibold group-hover:text-primary product-title">Men&apos;s Diamond Quilted Bomber Hoody</p>
             <p class="text-sm font-semibold text-textColor">
               $199.95
             </p>
@@ -497,7 +571,7 @@
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
             </div>
-            <p class="text-base font-semibold group-hover:text-primary">Paradigm Chilliwack coat Black Label</p>
+            <p class="text-base font-semibold group-hover:text-primary product-title">Paradigm Chilliwack coat Black Label</p>
             <p class="text-sm font-semibold text-textColor">
               $1495.00
             </p>
@@ -520,7 +594,7 @@
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
               <img src="/assets/svgs/Star-icon.svg" alt="Star-icon"/>
             </div>
-            <p class="text-base font-semibold group-hover:text-primary">Men&apos;s Torrentshell 3L Rain Jacket in Brown</p>
+            <p class="text-base font-semibold group-hover:text-primary product-title">Men&apos;s Torrentshell 3L Rain Jacket in Brown</p>
             <p class="text-sm font-semibold text-textColor">
               $149.00
             </p>
@@ -530,39 +604,39 @@
     </section>
     <section class="sales-up-off pt-28">
 
-      <div class="row grid grid-cols-2 items-center">
+      <div class="row grid lg:grid-cols-2 items-center">
         <div class="col-md-6 p-0">
           <img src="/assets/images/placeholder-img-2.png" alt="placeholder-img" class="w-full">
         </div>
-        <div class="pl-14 text-white text-wrapper flex flex-col justify-center gap-2 h-full bg-[#F3F5F7]">
+        <div class="xl:pl-14 lg:pl-10 pl-7 lg:py-0 py-14 text-white text-wrapper flex flex-col justify-center gap-2 h-full bg-[#F3F5F7]">
           <h6 class="text-primary font-bold mb-0">SALE UP TO 35% OFF</h6>
           <h1 class="heading2 text-textColor leading-tight font-medium">HUNDREDS <br> of 
             New lower prices!</h1>
           <p class="text-xl text-textColor mt-3">Hurry up!!! Winter is coming!</p>
-            <a href="#" class="filter-secondary mt-3 border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-2" type="button"> Shop Now <img src="/assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
+            <a href="#" class="text-sm filter-secondary mt-3 border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-2" type="button"> Shop Now <img src="/assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
         </div>
       </div>
     </section>
-    <section class="pt-24 site-container">
+    <section class="lg:pt-24 pt-5 site-container">
       <div>
 
         <h6 class="text-primary text-base font-bold uppercase text-center">pROMOTION</h6>
         <h2 class="heading2 font-medium text-center">
           Winter Collections
         </h2>
-        <p class="text-xl text-textColor text-center mt-2">Introducing the new winter jackets.
+        <p class="lg:text-xl text-base text-textColor text-center mt-2">Introducing the new winter jackets.
         </p>
       </div>
-      <div class="pt-10">
+      <div class="lg:mt-10 mt-5">
 
-        <img src="/assets/images/video.png" alt="video">
+        <img src="/assets/images/video.png" alt="video" class="w-full h-full lg:min-h-fit min-h-96 object-cover rounded-2xl">
       </div>
     </section>
-    <section class="latest-articles mt-28 site-container">
-      <h2 class="heading2 text-textColor font-medium flex items-center justify-between">
-        Latest Articles   <a href="#" class="filter-secondary mt-3 border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-5 text-base" type="button"> View More  <img src="assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
+    <section class="latest-articles lg:pt-28 pt-14 site-container">
+      <h2 class="heading2 text-textColor font-medium flex items-center justify-between leading-tight">
+        Latest Articles   <a href="#" class="filter-secondary mt-3 border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center lg:gap-5 gap-2 lg:text-base text-sm whitespace-nowrap" type="button"> View More  <img src="/assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
       </h2>
-      <div class=" grid grid-cols-3 gap-x-5  gap-y-16 mt-10">
+      <div class=" grid md:grid-cols-3 sm:grid-cols-2  gap-x-5  gap-y-16 mt-10">
         <div class="cursor-pointer group">
 
           <div class="relative  overflow-hidden">
@@ -570,7 +644,7 @@
           </div>
           <div class="flex flex-col gap-2 mt-4">
             <p class="text-xl font-medium mb-0">2023 Holiday Gift Guide</p>
-            <a href="#" class="filter-secondary border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-2 text-base" type="button"> Read More  <img src="assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
+            <a href="#" class="filter-secondary border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-2 text-base" type="button"> Read More  <img src="/assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
           </div>
         </div>
         <div class="cursor-pointer group">
@@ -580,7 +654,7 @@
           </div>
           <div class="flex flex-col gap-2 mt-4">
             <p class="text-xl font-medium mb-0">2023 Holiday Gift Guide</p>
-            <a href="#" class="filter-secondary border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-2 text-base" type="button"> Read More  <img src="assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
+            <a href="#" class="filter-secondary border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-2 text-base" type="button"> Read More  <img src="/assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
           </div>
         </div>
         <div class="cursor-pointer group">
@@ -590,22 +664,22 @@
           </div>
           <div class="flex flex-col gap-2 mt-4">
             <p class="text-xl font-medium mb-0">2023 Holiday Gift Guide</p>
-            <a href="#" class="filter-secondary border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-2 text-base" type="button"> Read More  <img src="assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
+            <a href="#" class="filter-secondary border-b text-textColor w-fit border-textColor font-medium hover:border-primary flex items-center gap-2 text-base" type="button"> Read More  <img src="/assets/svgs/arrow-right-black.svg" alt="arrow-right-black"></a>
           </div>
         </div>
         </div>
     </section>
-    <section class="feeds-section mt-28 site-container">
+    <section class="feeds-section lg:mt-28 mt-20 site-container">
       <div>
 
         <h6 class="text-lightGrey font-bold uppercase text-center text-base">newsfeed</h6>
         <h2 class="heading2 font-medium text-center">
           Instagram
         </h2>
-        <p class="text-xl text-textColor text-center mt-2">Follow us on social media for more discount & promotions</p>
+        <p class="lg:text-xl text-sm text-textColor text-center mt-2">Follow us on social media for more discount & promotions</p>
         <h6 class="text-xl text-lightGrey font-medium text-center mt-4">@3legant_official</h6>
       </div>
-      <div class="grid grid-cols-4 items-center gap-5 mt-10">
+      <div class="grid xl:grid-cols-4 md:grid-cols-2  gap-5 mt-10">
         <div>
           <img src="/assets/images/feed1.png" alt="placeholder-img" class="w-full">
         </div>
@@ -620,26 +694,26 @@
         </div>
       </div>
     </section>
-    <section class="sales-up-off mt-28 site-container">
-      <div class="grid grid-cols-4 items-center gap-5 mt-10 pl-10">
+    <section class="sales-up-off lg:mt-28 my-20 site-container">
+      <div class="grid lg:grid-cols-4 grid-cols-2 items-center lg:gap-5 gap-x-14 gap-y-20 mt-10 pl-10">
         <div class="flex flex-col gap-2">
           <img src="/assets/svgs/fast-delivery.svg" alt="shipping-icon" class="w-12">
-          <h6 class="text-xl font-medium text-textColor mt-2">Free Shipping</h6>
+          <h6 class="lg:text-xl text-sm font-medium text-textColor mt-2">Free Shipping</h6>
           <p class="text-sm text-lightGrey">Order above $200</p>
         </div>
         <div class="flex flex-col gap-2">
           <img src="/assets/svgs/money.svg" alt="money-icon" class="w-12">
-          <h6 class="text-xl font-medium text-textColor mt-2">Money-back</h6>
+          <h6 class="lg:text-xl text-sm font-medium text-textColor mt-2">Money-back</h6>
           <p class="text-sm text-lightGrey">30 days guarantee</p>
         </div>
         <div class="flex flex-col gap-2">
           <img src="/assets/svgs/secure-payment.svg" alt="Payment-icon" class="w-12">
-          <h6 class="text-xl font-medium text-textColor mt-2">Secure Payments</h6>
+          <h6 class="lg:text-xl text-sm font-medium text-textColor mt-2">Secure Payments</h6>
           <p class="text-sm text-lightGrey">Secured by Stripe</p>
         </div>
         <div class="flex flex-col gap-2">
           <img src="/assets/svgs/call.svg" alt="call-icon" class="w-12">
-          <h6 class="text-xl font-medium text-textColor mt-2">24/7 Support</h6>
+          <h6 class="lg:text-xl text-sm font-medium text-textColor mt-2">24/7 Support</h6>
           <p class="text-sm text-lightGrey">Phone and Email support </p>
         </div>
       </div>
@@ -650,7 +724,7 @@
   <footer class=" text-textColor bg-lightBlue py-20 mt-8">
     <div class="site-container">
 
-      <div class="grid grid-cols-3">
+      <div class="grid md:grid-cols-3 md:grid-cols-2">
         <div class="flex flex-col gap-7">
           <img src="/assets/svgs/Logo.svg" alt="website-logo" class="max-w-24">
           <div class="flex flex-col gap-3">
@@ -676,9 +750,10 @@
           </div>
     
         </div>
-        <div class="grid grid-cols-2">
+        <hr class="border  border-slate-300 my-10 md:hidden block">
+        <div class="grid md:grid-cols-2">
           <div class="flex flex-col gap-7">
-            <h6 class="text-base font-medium">Page</h6>
+            <h6 class="text-base font-medium flex items-center justify-between">Page <span class="md:hidden block cursor-pointer"><img src="/assets/svgs/Line.svg" alt="arrow"></span></h6>
             <ul class="flex flex-col gap-6">
               <li class="text-sm text-textColor">
                 <a href="#">
@@ -705,8 +780,9 @@
             </a></li>
             </ul>
           </div>
+          <hr class="border  border-slate-300 my-10 md:hidden block">
           <div class="flex flex-col gap-7">
-            <h6 class="text-base font-medium">Info</h6>
+            <h6 class="text-base font-medium flex items-center justify-between">Info <span class="md:hidden block cursor-pointer"><img src="/assets/svgs/Line.svg" alt="arrow"></span></h6>
             <ul class="flex flex-col gap-6">
               <li class="text-sm text-textColor">
                 <a href="#">
@@ -731,26 +807,31 @@
             </ul>
           </div>
           </div>
+          <hr class="border  border-slate-300 my-10 md:hidden block">
           <div class="flex flex-col gap-7">
             <h6 class="text-base font-medium">Join Newsletter</h6>
             <p class="text-sm">Subscribe our newsletter to get more deals, new <br> products and promotions</p>
-            <div class="flex items-center justify-between border border-slate-300 rounded-full p-1">
+            <div class="flex items-center justify-between border border-slate-300 rounded-full p-1 ">
     
               <input type="text" placeholder="Enter your email" class="text-sm focus:outline-none  bg-transparent px-2 placeholder:text-lightGrey w-full">
-              <img src="assets/svgs/bg-circle-cion.svg" alt="send-email-bttn" class="transition-all duration-500 hover:scale-105 cursor-pointer hover:opacity-90">
+              <img src="/assets/svgs/bg-circle-cion.svg" alt="send-email-bttn" class="transition-all duration-500 hover:scale-105 cursor-pointer hover:opacity-90">
             </div>
           </div>
     
       </div>
-      <hr class="border-lightGrey mt-16 mb-10">
-      <div class="grid grid-cols-2">
-        <div class="flex items-center gap-5 whitespace-nowrap">
-          <span>Copyright © 2023  <a href="/">3legant.</a> All rights reserved</span> 
-         <span>|</span> <a href="#" >Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
+      <hr class="md:border-lightGrey border-slate-300 mt-16 mb-5">
+      <div class="md:hidden flex justify-center items-center mb-7">
+        <img src="/assets/images/payment-methods.png" alt="payment-methods" class="max-w-56">
+      </div>
+      <div class="grid lg:grid-cols-2">
+        <div class="md:flex items-center gap-5 md:whitespace-nowrap md:text-sm text-xs text-center lg:justify-start justify-center ">
+          <span class="md:mb-0 mb-5 md:inline-block hidden">Copyright © 2023  <a href="/">3legant.</a> All rights reserved</span> 
+         <span class="md:block hidden">|</span> <a href="#" class="inline-block md:mb-0 mb-5" >Privacy Policy</a>
+          <a href="#" class="md:ml-0 ml-6">Terms &amp; Conditions</a>
+          <span class=" md:hidden inline-block">Copyright © 2023  <a href="/">3legant.</a> All rights reserved</span>
         </div>
-        <div class="flex justify-end items-center">
-          <img src="assets/images/payment-methods.png" alt="payment-methods" class="max-w-56">
+        <div class="md:flex lg:justify-end justify-center items-center hidden lg:mt-0 mt-5 ">
+          <img src="/assets/images/payment-methods.png" alt="payment-methods" class="max-w-56">
         </div>
       </div>
     </div>

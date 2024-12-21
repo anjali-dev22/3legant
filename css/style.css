@@ -143,9 +143,7 @@ header .product-count {
     width: 18px;
     background-color: transparent;
 }
-.swiper-button-next , .swiper-button-prev {
-    display: none;
-}
+
 .product-swiper .btn-secondary {
     bottom: 110px;
 }
@@ -204,4 +202,59 @@ header .product-count {
 }
 #pills-wishlist table td {
     width: 41.33%;
+}
+.swiper-button-lock {
+    display: block;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 12px;
+}
+.productSwiper .swiper-button-next, .productSwiper .swiper-button-prev {
+    top: -36px;
+    color: #fff;
+    background: #000;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    display: flex;
+}
+.productSwiper.swiper {
+    overflow: visible !important;
+}
+.productSwiper .swiper-button-next {
+    right: 143px;
+}
+.productSwiper .swiper-button-prev {
+    right: 200px;
+    left: auto;
+}
+
+
+#toggleDiv {
+    height: fit-content;
+    min-height: 200px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0; /* Ensure it's positioned relative to the parent container */
+    left:0;
+    transform: translateY(-200%); /* Hidden above the viewport */
+    transition: transform 0.5s ease-in-out;
+    z-index: 0;
+}
+
+#toggleDiv.visible {
+    transform: translateY(36%); /* Slide down into view */
+}
+#menu-div .menu-close, #menu-div.active .menu-toggle {
+    display: none;
+}
+#menu-div .menu-toggle, #menu-div.active .menu-close {
+    display: block;
+}
+.brands-swiper-button-next {
+    right: 35%;
+}
+.brands-swiper-button-prev {
+    left: 35%;
 }
