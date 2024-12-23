@@ -11,12 +11,12 @@
 
 <body class="overflow-x-hidden">
 
-   <div class="grid grid-cols-2 gap-24 max-h-screen overflow-hidden flex items-center justify-center">
+   <div class="grid lg:grid-cols-2 xl:gap-24 lg:gap-6 gap-10 lg:max-h-screen xl:overflow-hidden lg:pb-0 pb-10 flex items-center lg:justify-center">
     <div class="bg-[#f2f4f6]">
         <img src="/assets/svgs/Logo.svg" alt="logo" class="mx-auto relative top-10"/>
-        <img src="/assets/images/signin-banner.png" alt="signin-banner" class="h-full w-full object-cover max-h-screen"/>
+        <img src="/assets/images/signin-banner.png" alt="signin-banner" class="h-full w-full object-cover md:max-h-screen max-h-96"/>
     </div>
-    <div class=" flex flex-col gap-5 max-w-xl max-h-screen">
+    <div class=" flex flex-col gap-5 lg:max-w-xl max-h-screen lg:px-0 px-7 ">
         <h2 class="heading2 font-semibold text-left">
             Sign In
         </h2>
@@ -31,11 +31,11 @@
             </div>
             <div class="flex items-center justify-between">
 
-                <label class="text-base text-lightGrey flex items-center gap-2 cursor-pointer">
+                <label class="md:text-base text-xs text-lightGrey flex items-center gap-2 cursor-pointer">
                     <input type="checkbox" name="checkbox" value="value" class="w-5 h-5">
                     Remember me
                  </label>
-                 <a href="#" class="text-base font-semibold">Forgot password?</a>
+                 <a href="#" class="md:text-base text-xs font-semibold">Forgot password?</a>
             </div>
             <div class=" w-full">
                 <button class="bg-textColor text-white transition-all border border-textColor p-3 rounded-xl  w-full duration-500 hover:bg-transparent hover:text-textColor w-full" type="button">Sign In</button>

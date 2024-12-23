@@ -160,24 +160,27 @@ header .product-count {
 }
 .shop-banner {
     background-image: url(/assets/images/shop-banner.png);
-    background-size: 100%;
+    background-size: cover;
     height: 100%;
     width: 100%;
     min-height: 392px;
+    background-repeat: no-repeat;
 }
 .blog-banner {
     background-image: url(/assets/images/blog-bg.png);
-    background-size: 100%;
+    background-size: cover;
     height: 100%;
     width: 100%;
     min-height: 392px;
+    background-repeat: no-repeat;
 }
 .news-letter {
     background-image: url(/assets/images/news-letterimg.png);
-    background-size: 100%;
+    background-size: cover;
     height: 100%;
     width: 100%;
     min-height: 392px;
+    background-repeat: no-repeat;
 }
 .dark-footer .social-icon img {
     filter: brightness(0) saturate(100%) invert(98%) sepia(6%) saturate(325%) hue-rotate(276deg) brightness(115%) contrast(100%);
@@ -258,3 +261,12 @@ header .product-count {
 .brands-swiper-button-prev {
     left: 35%;
 }
+.swiper-button-next.swiper-button-disabled img, .swiper-button-prev.swiper-button-disabled img {
+    opacity: 0.5;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled  {
+    opacity: 1;
+}
+table td {
+    padding: 20px 0px;
+  }
