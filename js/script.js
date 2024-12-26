@@ -140,9 +140,22 @@ menu.addEventListener("click", () => {
 
 const cart = document.getElementById("cart-button");
 const sidebar = document.getElementById("cartSlider");
+const bodyClass = document.querySelector("body");
 
 cart.addEventListener("click", () => {
   // Toggle the 'hidden' class on click
-  sidebar.classList.toggle("hidden");
+  bodyClass.classList.toggle("modal-open");
+  sidebar.classList.toggle("visible");
 });
+sidebar.addEventListener("click", () => {
+  // Toggle the 'hidden' class on click
+
+  sidebar.classList.toggle("visible");
+  bodyClass.classList.toggle("modal-open");
+});
+
+// bodyClass.addEventListener("click" , ()=>{
+//   bodyClass.classList.toggle("modal-open");
+// })
+
 

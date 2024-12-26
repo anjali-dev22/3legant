@@ -13,71 +13,97 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/responsive.css" rel="stylesheet">
 </head>
 
 <body class="overflow-x-hidden">
 
-    <header class="bg-white py-3">
+    <header class="bg-white py-3 relative z-10">
         <div class="site-container">
-            <div class="row items-center flex justify-between">
-                <div class="col-lg-3">
-                    <a href="/">
-
-                        <img src="/assets/svgs/Logo.svg" alt="Logo">
-                    </a>
-
-                </div>
-                <div class="col-lg-6">
-                    <nav>
-                        <ul class="flex items-center gap-10  text-sm">
-                            <li>
-                                <a href="/home" class="border-b-2 pb-1 border-transparent hover:border-primary">Home</a>
-                            </li>
-                            <li>
-                                <a href="/shop" class="border-b-2 pb-1 border-transparent hover:border-primary">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Products</a>
-                            </li>
-                            <li>
-                                <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Contact
-                                    Us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3">
-                    <div class="flex items-center gap-2  text-sm justify-end">
-                        <a href="#" class="filter-primary transition-all duration-500">
-                            <img src="/assets/svgs/search.svg" alt="search">
-                        </a>
-                        <a href="#" class="filter-primary transition-all duration-500">
-
-                            <img src="/assets/svgs/user-circle.svg" alt="user-circle">
-                        </a>
-                        <a href="#" class="filter-primary transition-all duration-500">
-
-                            <img src="/assets/svgs/shopping-bag.svg" alt="shopping-bag">
-                        </a>
-                        <span
-                            class="rounded-full  product-count text-white flex items-center  justify-center  font-bold hover:bg-primary cursor-pointer">3</span>
-                    </div>
-
-                </div>
+          <div class="row items-center flex justify-between">
+            
+          
+            <div  class="col-lg-3 flex items-center">
+              <span id="menu-div" class="md:hidden block">
+                <img src="/assets/svgs/menu-close.svg" alt="menu-close" class="min-w-10 p-2 menu-close" />
+                <img src="/assets/svgs/menu-toggle.svg" alt="menu-toggle" class="min-w-10 menu-toggle" />
+              </span>
+              <a href="/">
+    
+                <img src="/assets/svgs/Logo.svg" alt="Logo">
+              </a>
+          
             </div>
+            <div class="col-lg-6 md:block hidden">
+              <nav>
+                <ul class="flex items-center gap-10  text-sm">
+                  <li>
+                    <a href="/home" class="border-b-2 pb-1 border-transparent hover:border-primary">Home</a>
+                  </li>
+                  <li>
+                    <a href="/shop" class="border-b-2 pb-1 border-transparent hover:border-primary">Shop</a>
+                  </li>
+                  <li>
+                    <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Products</a>
+                  </li>
+                  <li>
+                    <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-3">
+              <div class="flex items-center gap-2  text-sm justify-end">
+                <a href="#" class="filter-primary transition-all duration-500 lg:block hidden">
+                <img src="/assets/svgs/search.svg" alt="search">
+                </a>
+                <a href="#" class="filter-primary transition-all duration-500 lg:block hidden">
+    
+                  <img src="/assets/svgs/user-circle.svg" alt="user-circle">
+                </a>
+                <a href="#" id="cart-button" class="filter-primary transition-all duration-500">
+    
+                  <img src="/assets/svgs/shopping-bag.svg" alt="shopping-bag">
+                </a>
+                <span class="rounded-full  product-count text-white flex items-center  justify-center  font-bold hover:bg-primary cursor-pointer">3</span>
+              </div>
+    
+            </div>
+          </div>
         </div>
-    </header>
+      </header>
+      <div id="toggleDiv" >
+        <nav >
+          <ul class="flex items-center gap-10  text-sm flex-col p-10">
+            <li>
+              <a href="/home" class="border-b-2 pb-1 border-transparent hover:border-primary">Home</a>
+            </li>
+            <li>
+              <a href="/shop" class="border-b-2 pb-1 border-transparent hover:border-primary">Shop</a>
+            </li>
+            <li>
+              <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Products</a>
+            </li>
+            <li>
+              <a href="#" class="border-b-2 pb-1 border-transparent hover:border-primary">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+<div class="flex md:hidden items-center gap-2 text-sm text-lightGrey site-container mt-6">
+    <img src="../assets/svgs/chevron-right.svg" alt="chevron-right"> back to home
+</div>
 
-    <main class="py-20">
+    <main class="md:py-20 pt-10 pb-20">
         <section class="site-container  ">
             <h1 class="heading1 font-medium text-center">Complete!</h1>
             <div class="flex items-center justify-between w-full max-w-3xl gap-10 mt-10 mx-auto">
-                <span class="flex items-center gap-3 step-1 border-b-2 border-green pb-5 w-full ">
+                <span class="md:flex hidden items-center gap-3 step-1 border-b-2 border-green pb-5 w-full ">
                     <span
                         class="bg-green flex items-center justify-center h-10 w-10 text-base text-white font-semibold rounded-full"><i class="fa-solid fa-check"></i></span>
                     <span class="text-base text-green">Shopping cart</span>
                 </span>
-                <span class="flex items-center gap-3 step-1 border-b-2 border-green pb-5 w-full ">
+                <span class="md:flex hidden items-center gap-3 step-1 border-b-2 border-green pb-5 w-full ">
                   <span
                       class="bg-green flex items-center justify-center h-10 w-10 text-base text-white font-semibold rounded-full"><i class="fa-solid fa-check"></i></span>
                   <span class="text-base text-green">Checkout details</span>
@@ -91,55 +117,55 @@
                 
             </div>
             <div class="flex gap-12 w-full pt-20">
-                <div class="w-4/5 mx-auto">
-                    <div class="px-12 py-16 shadow-xl rounded-lg">
-                        <h5 class="font-medium text-3xl text-lightGrey text-center">Thank you! 🎉</h5>
-                        <h2 class="heading2 font-medium text-center leading-10 mt-5">Your order has been <br> received</h2>
+                <div class="md:w-4/5 mx-auto w-full">
+                    <div class="md:px-12 md:py-16 p-5 shadow-xl rounded-lg">
+                        <h5 class="font-medium text-3xl text-lightGrey md:text-center">Thank you! 🎉</h5>
+                        <h2 class="md:text-4xl text-34 font-medium md:text-center leading-10 mt-5">Your order <br class="md:hidden block">has been <br> received</h2>
                         <div class="flex items-center gap-10 justify-center mt-14 flex-col">
-                            <div class="flex items-center gap-14 justify-center">
+                            <div class="flex items-center lg:gap-14 md:gap-10 gap-5 md:justify-center justify-between flex-wrap">
 
                                 <span class="relative">
-                                    <span class=" absolute -right-4 -top-4 bg-textColor text-sm h-8 w-8 text-white flex items-center justify-center rounded-full">2</span>
+                                    <span class=" absolute md:-right-4 -right-1 md:-top-4 -top-3 bg-textColor sm:text-sm text-xs md:h-8 w-4 h-4 md:w-8 w-6 h-6 text-white flex items-center justify-center rounded-full">2</span>
     
                                     <img src="/assets/images/table-black.png" alt="product-1"
-                                    class="min-w-20  max-h-24" />
+                                    class="md:min-w-20  md:max-h-24 min-w-10 sm:max-w-20 max-w-16 h-full w-full" />
                                 </span>
                                 <span class="relative">
-                                    <span class=" absolute -right-4 -top-4 bg-textColor text-sm h-8 w-8 text-white flex items-center justify-center rounded-full">2</span>
+                                    <span class=" absolute md:-right-4 -right-1 md:-top-4 -top-3 bg-textColor sm:text-sm text-xs md:h-8 w-4 h-4 md:w-8 w-6 h-6 text-white flex items-center justify-center rounded-full">2</span>
     
                                     <img src="/assets/images/table-black.png" alt="product-1"
-                                    class="min-w-20  max-h-24" />
+                                    class="md:min-w-20  md:max-h-24 min-w-10 sm:max-w-20 max-w-16 h-full w-full" />
                                 </span>
                                 <span class="relative">
-                                    <span class=" absolute -right-4 -top-4 bg-textColor text-sm h-8 w-8 text-white flex items-center justify-center rounded-full">2</span>
+                                    <span class=" absolute md:-right-4 -right-1 md:-top-4 -top-3 bg-textColor sm:text-sm text-xs md:h-8 w-4 h-4 md:w-8 w-6 h-6 text-white flex items-center justify-center rounded-full">2</span>
     
                                     <img src="/assets/images/table-black.png" alt="product-1"
-                                    class="min-w-20  max-h-24" />
+                                    class="md:min-w-20  md:max-h-24 min-w-10 sm:max-w-20 max-w-16 h-full w-full" />
                                 </span>
                             </div>
-                            <table class="w-full max-w-64 mx-auto">
+                            <table class="w-full lg:max-w-64 mx-auto">
                                 <tbody>
                                     <tr>
-                                        <td class="text-sm font-semibold text-lightGrey py-3">Order code:</td>
-                                        <td class="text-sm font-semibold text-textColor py-3">#0123_45678</td>
+                                        <td class="text-sm font-semibold text-lightGrey lg:py-3 py-1 text-left">Order code:</td>
+                                        <td class="text-sm font-semibold text-textColor lg:py-3 py-1 md:text-right text-left">#0123_45678</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-sm font-semibold text-lightGrey py-3">Date:</td>
-                                        <td class="text-sm font-semibold text-textColor py-3">October 19, 2023</td>
+                                        <td class="text-sm font-semibold text-lightGrey lg:py-3 py-1 text-left">Date:</td>
+                                        <td class="text-sm font-semibold text-textColor lg:py-3 py-1 md:text-right text-left">October 19, 2023</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-sm font-semibold text-lightGrey py-3">Total:</td>
-                                        <td class="text-sm font-semibold text-textColor py-3">$1,345.00</td>
+                                        <td class="text-sm font-semibold text-lightGrey lg:py-3 py-1 text-left">Total:</td>
+                                        <td class="text-sm font-semibold text-textColor lg:py-3 py-1 md:text-right text-left">$1,345.00</td>
                                     </tr>
                                     <tr>
-                                        <td class="text-sm font-semibold text-lightGrey py-3">Payment method:</td>
-                                        <td class="text-sm font-semibold text-textColor py-3">Credit Card</td>
+                                        <td class="text-sm font-semibold text-lightGrey lg:py-3 py-1 text-left">Payment method:</td>
+                                        <td class="text-sm font-semibold text-textColor lg:py-3 py-1 md:text-right text-left">Credit Card</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="mt-7 text-center">
-                            <button class="bg-textColor text-white transition-all border border-textColor p-3 mx-auto rounded-full  w-full duration-500 hover:bg-transparent hover:text-textColor max-w-48" type="button">Purchase history</button>
+                            <button class="bg-textColor text-white transition-all border border-textColor p-3 mx-auto rounded-full  w-full duration-500 hover:bg-transparent hover:text-textColor md:max-w-48" type="button">Purchase history</button>
                            </div>
                         
                        </div>
@@ -150,48 +176,72 @@
 
     <footer class=" text-textColor bg-textColor text-white pt-20 pb-10 dark-footer">
         <div class="site-container">
-
-            <div class="grid grid-cols-2 justify-between  items-center text-sm">
-                <div class="flex items-center gap-10">
-
-                    <img src="/assets/svgs/white-Logo.svg" alt="footer-logo">
-                    <span class="text-lightGrey">|</span>
-                    <a href="#">Gift &amp; Decoration Store</a>
-                </div>
-                <div class="flex items-center gap-10 justify-end">
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Product</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact Us</a>
-                </div>
+    
+          <div class="grid md:grid-cols-2 md:justify-between  items-center text-sm">
+            <div class="flex items-center lg:gap-10 gap-5 md:flex-row flex-col">
+    
+              <img src="/assets/svgs/white-Logo.svg" alt="footer-logo">
+              <span class="text-lightGrey md:block hidden">|</span>
+              <a href="#">Gift &amp; Decoration Store</a>
             </div>
-            <hr class="border-lightGrey my-10">
-            <div class="grid grid-cols-2">
-                <div class="flex items-center gap-5 whitespace-nowrap text-xs text-white">
-                    <span>Copyright © 2023 <a href="/">3legant.</a> All rights reserved</span>
-                    <span>|</span> <a href="#" class="font-semibold">Privacy Policy</a>
-                    <a href="#" class="font-semibold">Terms &amp; Conditions</a>
-                </div>
-                <div class="flex justify-end items-center">
-                    <div class="flex items-center gap-5 mt-5 social-icon">
-                        <a href="#">
-
-                            <img src="/assets/svgs/instagram.svg" alt="instagram-icon">
-                        </a>
-                        <a href="#">
-
-                            <img src="/assets/svgs/facebook.svg" alt="facebook-icon">
-                        </a>
-                        <a href="#">
-
-                            <img src="/assets/svgs/youtube.svg" alt="youtube-icon">
-                        </a>
-                    </div>
-                </div>
+            <div class="flex items-center gap-10 justify-end md:flex-row flex-col md:mt-0 mt-10 lg:text-sm text-xs">
+              <a href="#">Home</a>
+              <a href="#">Shop</a>
+              <a href="#">Product</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact Us</a>
             </div>
+          </div>
+          <hr class="border-lightGrey my-10">
+          <div class="flex flex-col gap-5 justify-center md:hidden ">
+    
+            <div class="flex items-center justify-center gap-5 social-icon">
+              <a href="#">
+      
+                <img src="/assets/svgs/instagram.svg" alt="instagram-icon">
+              </a>
+              <a href="#">
+      
+                <img src="/assets/svgs/facebook.svg" alt="facebook-icon">
+              </a>
+              <a href="#">
+      
+                <img src="/assets/svgs/youtube.svg" alt="youtube-icon">
+              </a>
+            </div>
+            <div class="flex items-center justify-center gap-5 whitespace-nowrap text-xs text-white">
+               <a href="#" class="font-semibold" >Privacy Policy</a>
+              <a href="#" class="font-semibold">Terms &amp; Conditions</a>
+            </div>
+            <div class="text-xs text-center">
+              <span>Copyright © 2023  <a href="/">3legant.</a> All rights reserved</span> 
+            </div>
+          </div>
+          <div class="md:grid grid-cols-2  hidden">
+            <div class="flex items-center gap-5 whitespace-nowrap text-xs text-white">
+              <span>Copyright © 2023  <a href="/">3legant.</a> All rights reserved</span> 
+             <span>|</span> <a href="#" class="font-semibold" >Privacy Policy</a>
+              <a href="#" class="font-semibold">Terms &amp; Conditions</a>
+            </div>
+            <div class="flex justify-end items-center">
+              <div class="flex items-center gap-5 mt-5 social-icon">
+                <a href="#">
+        
+                  <img src="/assets/svgs/instagram.svg" alt="instagram-icon">
+                </a>
+                <a href="#">
+        
+                  <img src="/assets/svgs/facebook.svg" alt="facebook-icon">
+                </a>
+                <a href="#">
+        
+                  <img src="/assets/svgs/youtube.svg" alt="youtube-icon">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <!-- Bootstrap 5 JS Bundle CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

@@ -35,6 +35,12 @@
     }
 }
 @media only screen and (max-width:767px) {
+    #cartSlider {
+        transform: translateX(200%);
+    }
+    #cartSlider .nav {
+        width: 90%;
+    }
         table {
           border: 0;
         }
